@@ -1,0 +1,205 @@
+:root
+{
+    --roxo: #380b61;
+    --roxo-secundario: #370b61bd;
+}
+
+@font-face {
+    font-family: Alex Brush;
+    src: url('AlexBrush-Regular.ttf') format('opentype');
+} 
+
+body
+{
+    overflow-x: hidden;
+    min-height: 100vh!important;
+}
+
+.text-brush
+{
+    font-family: Alex Brush;
+}
+
+/* Menu */
+.navbar-brand
+{/*Nome Dona Benvinda Confeitaria*/
+    color: gold;
+    font-size: 30px!important;
+    padding: 0!important;
+    transition: all linear 1s;
+}
+
+.navbar-brand:hover
+{/*Nome Dona Benvinda Confeitaria*/
+    color: gold;
+    text-shadow: 1px 0 2px #fff;
+}
+.navbar
+{
+    padding-bottom: 0!important;
+}
+/* Menu */
+
+.img-galeria
+{
+    transition: all linear 1s;
+    cursor: pointer;
+}
+ 
+figcaption:hover + .img-galeria, .img-galeria:hover
+{/*legenda*/
+    transform: scale(1)!important;
+    overflow: hidden;
+    
+}
+
+.col-4
+{/*legenda*/
+    overflow: hidden;
+    border: 5px solid #fff;
+    display: flex;
+    padding-right: 0px!important;
+    padding-left: 0px!important;
+}
+
+.legenda, .legenda1
+{/*legenda*/
+    font-size: 13px;
+    z-index: 999!important;
+    display: flex!important;
+    align-items:center;
+    justify-content: center;
+    transition: all linear 1s;
+    color: transparent;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    margin-top: 0;
+    margin-left: 0;
+    overflow: hidden;
+}
+
+
+/*Animacao da legenda*/
+.transition-left
+{
+    top: 0;
+    height: 100%;
+    width: 0;
+}
+
+.transition-top
+{
+    top: 0;
+    height: 0;
+    width: 100%;
+}
+
+.transition-right
+{
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+}
+.img-galeria:hover + .legenda, .legenda:hover, figcaption:hover + .legenda
+{ /*Fazer legenda aparecer*/
+    background-color: var(--roxo)!important;
+    color: #fff;
+    width: 100%!important;
+    height: 100%!important;
+    font-size: 20px;
+}
+/*Animacao da legenda*/
+
+.footer{
+    color: #fff;
+    background: var(--roxo);
+}
+
+.bg-roxo
+{/*Fundo roxo*/
+    background-color: var(--roxo)!important;
+}
+
+a.text-footer, a.text-footer:hover
+{
+    font-size: 20px;
+    text-decoration: underline dotted #fff!important;
+    color: #fff;
+    transition: 1s;
+}
+
+a.text-footer:hover
+{
+    opacity: .7;
+}
+
+
+/*Animacao de carregamento da pagina*/
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-loading
+{ 
+    position: absolute;
+}
+
+.spinner-border
+{
+    height: 100px!important;
+    width: 100px!important;
+    color: var(--roxo) !important;;
+}
+/*Animacao de carregamento da pagina*/
+
+
+.dropdown-item:hover
+{
+    background: var(--roxo)!important;
+    color: #fff!important;
+}
+
+/* Acordion */
+.accordion-button:not(.collapsed)
+{
+    background: var(--roxo-secundario)!important;
+    color: #fff!important;
+}
+
+
+textarea
+{
+    resize: none!important;
+}
+.bg-enviar
+{
+    background: var(--roxo)!important;
+    color: #fff!important;
+    width: 100%;
+    transition: all linear 1s;
+}
+
+.bg-enviar:hover
+{
+    opacity: .9;
+}
+
+.active
+{
+    color: #fff!important;
+}
+
+.dropdown-item.active
+{
+    background: var(--roxo-secundario)!important;
+}
